@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
   //   name: 'Andrew',
   //   likes: ['Biking', 'Cities']
   // });
-  res.render('home.hbs', {
+  res.render('Home.hbs', {
     pageTitle: 'Home Page',
     welcomeMessage: 'Welcome to my web site'
   });
