@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
   //   name: 'Andrew',
   //   likes: ['Biking', 'Cities']
   // });
-  res.render('Home.hbs', {
+  res.render('home.hbs', {
     pageTitle: 'Home Page',
     welcomeMessage: 'Welcome to my web site'
   });
@@ -55,6 +55,13 @@ app.get('/about', (req, res) => {
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Unable to handle request'
+  });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    message: 'All my projects'
   });
 });
 
